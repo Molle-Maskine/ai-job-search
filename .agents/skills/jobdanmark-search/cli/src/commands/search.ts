@@ -77,7 +77,7 @@ export const search = defineCommand({
   name: "search",
   description: "Search job listings on Jobdanmark.dk",
   options: {
-    text: option(z.string().optional(), { short: "q", description: "Free-text keyword search" }),
+    query: option(z.string().optional(), { short: "q", description: "Free-text keyword search" }),
     category: option(z.coerce.number().optional(), { description: "Category ID (e.g. 227978 for IT)" }),
     "jobtitle-id": option(z.coerce.number().optional(), { description: "Job title ID from autocomplete results" }),
     municipality: option(z.string().optional(), { description: "Municipality name, e.g. Odense, København" }),
@@ -91,8 +91,8 @@ export const search = defineCommand({
   handler: async ({ flags, output }) => {
     const filters: SearchFilter[] = []
 
-    if (flags.text) {
-      filters.push({ type: "freetext", value: flags.text, displayText: flags.text })
+    if (flags.query) {
+      filters.push({ type: "freetext", value: flags.query, displayText: flags.query })
     }
     if (flags.category) {
       filters.push({ type: "category", value: flags.category, displayText: String(flags.category) })

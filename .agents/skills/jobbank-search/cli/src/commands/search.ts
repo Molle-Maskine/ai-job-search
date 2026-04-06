@@ -35,7 +35,7 @@ export const search = defineCommand({
   name: "search",
   description: "Search job listings on Jobbank.dk via RSS feed",
   options: {
-    key: option(z.string().optional(), { short: "q", description: "Keyword search (title, company, keyword)" }),
+    query: option(z.string().optional(), { short: "q", description: "Keyword search (title, company, keyword)" }),
     exclude: option(z.string().optional(), { description: "Exclude keywords (antikey)" }),
     type: option(z.array(z.coerce.number()).optional(), { description: "Job type code(s), e.g. --type 3 (Fuldtidsjob). Repeatable." }),
     education: option(z.array(z.coerce.number()).optional(), { description: "Education field code(s). Repeatable." }),
@@ -52,7 +52,7 @@ export const search = defineCommand({
   handler: async ({ flags, output }) => {
     const params: Record<string, string | string[]> = {}
 
-    if (flags.key) params["key"] = flags.key
+    if (flags.query) params["key"] = flags.query
     if (flags.exclude) params["antikey"] = flags.exclude
     if (flags.type?.length) params["cvtype"] = flags.type.map(String)
     if (flags.education?.length) params["udd"] = flags.education.map(String)

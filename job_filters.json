@@ -1,0 +1,42 @@
+{
+  "_comment": "Job search filters. Edit to customise what gets stored. All matches are case-insensitive.",
+
+  "blocklist_terms": [
+    "sygeplejerske", "sygepleje", "pædagog", "pædagogisk medarbejder",
+    "socialrådgiver", "social- og sundhedshjælper", "sosu",
+    "sundhedsplejerske", "psykolog", "fysioterapeut", "ergoterapeut",
+    "læge", "tandlæge", "jordemoder", "hjemmeplejer", "plejeassistent",
+    "omsorgsmedarbejder", "botilbud",
+    "montør", "mekaniker", "elektriker", "tømrer", "murer", "vvs",
+    "lagermedarbejder", "lageransvarlig", "lagerchef",
+    "chauffør", "lastbilchauffør", "buschauffør",
+    "rengøring", "rengøringsassistent", "køkkenmedarbejder",
+    "produktionsmedarbejder", "laborant", "dyrepasser", "dyrlæge",
+    "byggeteknisk", "anlægsgartner", "smed", "maskinmester",
+    "bobehandler", "malermester", "bygningsmaler",
+    "stilladsmontør", "antenneproduktion", "driftstekniker",
+    "sikringstekniker", "servicetekniker til gas",
+    "pladsdrift", "maskinoperatør",
+    "fysioterapeut", "museumsinspektør",
+    "svejser", "klejnsmed", "autoriseret"
+  ],
+
+  "location_filter": {
+    "enabled": true,
+    "allow_blank_location": true,
+    "allow_remote_keywords": ["remote", "hjemme", "fjernarbejde", "hybrid", "fleksibel"],
+    "allowed_area_keywords": [
+      "københavn", "kobenhavn", "copenhagen",
+      "frederiksberg", "gentofte", "gladsaxe",
+      "lyngby", "ballerup", "hvidovre", "herlev",
+      "brøndby", "brondby", "glostrup", "tåstrup", "taastrup",
+      "valby", "vanløse", "bispebjerg",
+      "østerbro", "osterbro", "nørrebro", "norrebro",
+      "vesterbro", "amager", "ørestad", "orestad",
+      "hellerup", "charlottenlund", "søborg", "soborg",
+      "birkerød", "birkerod", "hørsholm", "horsholm",
+      "roskilde", "køge", "koge",
+      "udlandet"
+    ]
+  }
+}
