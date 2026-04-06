@@ -5,7 +5,12 @@
       "Bash(python3:*)",
       "Bash(python:*)",
       "Bash(curl:*)",
-      "Bash(bun:*)"
+      "Bash(bun:*)",
+      "WebFetch(domain:www.jobindex.dk)",
+      "WebFetch(domain:job.jobnet.dk)",
+      "WebFetch(domain:www.jobbank.dk)",
+      "WebFetch(domain:jobnet.dk)",
+      "WebFetch(domain:www.jobdanmark.dk)"
     ]
   }
 }
