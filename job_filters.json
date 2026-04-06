@@ -18,7 +18,23 @@
     "sikringstekniker", "servicetekniker til gas",
     "pladsdrift", "maskinoperatør",
     "fysioterapeut", "museumsinspektør",
-    "svejser", "klejnsmed", "autoriseret"
+    "svejser", "klejnsmed", "autoriseret",
+
+    "head of care", "head of event", "event operations",
+    "head of hr", "head of people", "people & culture", "people and culture",
+    "head of finance", "finanschef", "regnskabschef", "controller",
+    "supply chain", "indkøbschef", "indkøber", "logistikchef",
+    "professor", "lektor", "adjunkt", "associate professor",
+    "fundraising", "kommunikationschef",
+    "receptionist", "sekretær", "assistent",
+    "jurist", "advokat",
+    "head of sales",
+    "praktikant", "studiejob", "student position", "student job", "student it",
+    "lærling", "read more",
+    "software developer", "scientific software",
+    "mechatronics", "railway signalling", "ertms", "materials discovery",
+    "instructor", "instructors for",
+    "autonomous labs", "accelerated materials"
   ],
 
   "location_filter": {
@@ -27,16 +43,12 @@
     "allow_remote_keywords": ["remote", "hjemme", "fjernarbejde", "hybrid", "fleksibel"],
     "allowed_area_keywords": [
       "københavn", "kobenhavn", "copenhagen",
-      "frederiksberg", "gentofte", "gladsaxe",
+      "frederiksberg", "gentofte",
       "lyngby", "ballerup", "hvidovre", "herlev",
-      "brøndby", "brondby", "glostrup", "tåstrup", "taastrup",
       "valby", "vanløse", "bispebjerg",
       "østerbro", "osterbro", "nørrebro", "norrebro",
       "vesterbro", "amager", "ørestad", "orestad",
-      "hellerup", "charlottenlund", "søborg", "soborg",
-      "birkerød", "birkerod", "hørsholm", "horsholm",
-      "roskilde", "køge", "koge",
-      "udlandet"
+      "hellerup", "charlottenlund", "søborg", "soborg"
     ]
   }
 }
